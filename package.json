@@ -1,7 +1,13 @@
 {
     "name": "empty",
+    "description": "Empty project",
+    "version": "0.0.1",
+    "private": true,
+    "author": "Laurentiu Ciobanu",
+    "main": "./dist/index.js",
     "scripts": {
         "build": "tsc",
+        "clean": "rimraf dist",
         "format": "prettier --write . && tsfmt -r"
     },
     "dependencies": {},
@@ -11,6 +17,7 @@
         "@typescript-eslint/parser": "^5.40.0",
         "eslint": "^8.25.0",
         "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
         "typescript": "npm:@laurci/typescript@latest",
         "typescript-formatter": "^7.2.2"
     },
